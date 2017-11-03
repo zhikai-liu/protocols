@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} %clear out default pagelayout
+\rhead{Last updated: \date{\today}}
+\lhead{Zhikai Liu (ZLP001)}
+\rfoot{Page \thepage}
+%\geometry{left=2cm,right=2cm,top=2.5cm,bottom=2.5cm}
+\renewcommand\thesection{\Roman{section}}
+
+\title{Protocol for patching vestibulospinal neurons \textit{in vivo} in larval zebrafish on Aerotech A3200 Single-Axis table}
+\date{September 14th, 2017}
+
+\begin{document}
+	\maketitle
+	\thispagestyle{fancy}
+	\begin{center}
+		\begin{tabular}	{l r}
+			Affiliation: & Martha Bagnall lab \\
+		\end{tabular}
+	\end{center}
+
+\section{Objectives}
+Larval zebrafish serves as an excellent model for dissecting vestibulospinal circuit. Intracellular recording of vestibulospinal neurons (VSNs) could reveal how vestibular afferent signals are processed by central vestibular neurons, and the organization of their tuning patterns. But it has never been performed \textit{in vivo} with sensory stimulation before. This protocol provides an approach to acheive that by patching on VSN and delivering vestibular stimulus with a moving stage.
+
+\section{Materials}
+	\begin{enumerate}[label=(\alph*)]
+		\item Larval zebrafish 3-7 dpf, VSNs labeled
+		\item External solution, internal solution with fluorescence dye, 1mg/mL $\alpha$-bungarotoxin
+		\item 2.5\% LM agarose gel, sharp pins, forceps
+	\end{enumerate}
+
+
+\section{Methods}
+	\begin{enumerate}[label=(\alph*)]
+		\item Prepare to start recording, make sure to \textbf{turn on} the following:
+		
+		\begin{enumerate}[label=\arabic*.]
+			\item All essential ephys components (rig, microscope, LED, etc)
+			\item Two computers
+			\item Aerotech Ndriver CP
+			\item Accelerometer
+			\item Nitrogen gas regulator
+			\item Heater to melt LM agarose gel
+		\end{enumerate}
+	
+		\item \textbf{Surgery:} to open up the skin on skull of the larval fish and get access into the brain
+		
+		\begin{enumerate}[label=\arabic*.]
+			\item Use pipette to transfer one or two fish into the petridish. Carefully remove remaining system water and add 15-20ul 1mg/mL $\alpha$-bungarotoxin (make sure fish is immersed). Wait for 5-10 mins until fish is paralyzed.
+			\item Remove all $\alpha$-bungarotoxin solution and add system water to wash away remaining drugs.
+			\item Use another petridish. User a little melted agarose gel to fill the dish. Wait for the gel to cool down(otherwise you will cook the fish!). When the mist around the dish almost disppears, pippette one paralyzed fish into the gel.
+			\item Use forceps to gently stir for a few cycles so the gel and the water that comes with the fish are mixed evenly. Use forceps to carefully move the fish to the right orientation (side-up or dorsal up). Wait for the gel to solidify. 
+			\item Add some external solution(Not system water!) into the dish. Use a good forcep to pick up a sharp pin. Carefully peel off the skin on the skull so there is an opening for electrode to go in. Also use the pin to remove the gel on top of the opening that could block path of the electrode. Put back the pin and use external solution to wash the dish a few times.
+			\item Put the dish under the microscope, with fish immersed in external solution, and perpare for recording.
+		\end{enumerate}
+		\item \textbf{Patch on a VSN}
+		\begin{enumerate}[label=\arabic*.]
+			\item Mix internal solution with fluorscence dye. Use a 1mL syringe and 0.2 um syringe filter for filling the electrode. Glass electrode should be 7-9 M$\Omega$. Fill the electrode half-full with the mixed internal. Carefully flick the electrode to remove the bubbles on the tip. 
+			\item Place the electrode on manipulator and put about 20 units of air to increase positive pressure. Use the manipulator to move the eletrode into the recording chamber(petridish that holds the fish). Examine the resistance of the electrode on Clampex with Membrane test Mode.
+			\item Approach the fish brain with the electrode under microscope with 4X objective. When it is close, switch to 40X (water-immersion) and continue until the electrode is around the opening on the skull of the fish. 
+			\item Switch the manipulator and microscope stage controller to slow mode. Use the IR-DIC and camera system on the computer to monitor the situation under the microscope. Make sure the electrode is not blocked by examining whether internal solution is coming out of the tip and pushing surrounding cells away.
+			\item Switch the fluoscence channel and find the cell of interest. Estimate the distance from the cell to your electrode. Find a good angle and enter into the brain carefully. Use the manipulator to control electrode moving along the "approach" axis as much as possible (going in other directions will cause more damage). 
+			\item When the tip of electrode is very close to the cell, reduce the positive pressure to 10 units or less. Poke the cell and feel the resistance change. Once the electrode is contacting the cell and the resistance increases ( usually 0.3-0.5M$\Omega$), release all pressure and apply a little suction, change voltage clamp to -65mV(\textbf{Critial, be as fast as possible}). If everything works, the resistance will start to increase very fast, and you will get a gigaseal! Before you reach the gigaseal, release the suction pressure.
+		\end{enumerate}
+		\item \textbf{Recording:}
+		\begin{enumerate}[label=\arabic*.]
+			\item After sealing, switch to the fluorescence channel and take an image of the cell you sealed on as "pre-breakin"
+			\item Remove the objective from the solution (\textbf{important!}). Then break in and start recording. (you can also break in first but make sure you remove the objective before you move the stage)
+			\item Turn on the gas and enable the axis on Aerotech Motion Composer/Desginer before running the program!
+			\item After recording is finished, put the objective back in, go back to the fluorescence channel. Take another image with both labelling fluoscence and filled fuoscence as "post-breakin", to confirm cell identity.
+		\end{enumerate}
+	\item After the experiment is done, remember to transfer all the data to Bagnall lab backup server.
+	\end{enumerate}
+\end{document}

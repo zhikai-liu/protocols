@@ -1,0 +1,81 @@
+\documentclass[11pt]{article}
+
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} %clear out default pagelayout
+\rhead{Last updated: \date{\today}}
+\lhead{Zhikai Liu (ZLP002)}
+\rfoot{Page \thepage}
+%\geometry{left=2cm,right=2cm,top=2.5cm,bottom=2.5cm}
+\renewcommand\thesection{\Roman{section}}
+
+\title{Protocol of light mircoscopy (LM) boicytin-filled neuron labeling reconstruction in whole-mount larval zebrafish}
+\date{October 30th, 2017}
+
+\begin{document}
+	\maketitle
+	\thispagestyle{fancy}
+	\begin{center}
+		\begin{tabular}	{l r}
+			Affiliation: & Martha Bagnall lab \\
+		\end{tabular}
+	\end{center}
+
+\section{Objectives}
+Larval zebrafish serves as an excellent model for dissecting vestibulospinal circuit. Intracellular recording of vestibulospinal neurons (VSNs) could reveal how vestibular afferent signals are processed by central vestibular neurons, and the organization of their tuning patterns. Furthermore, to explore the realtionship between the tuning pattern of VSN and its downstrean target in the spinal cord, reconstructing the morphorlogy of recorded neuron could provide preliminary insights.
+
+\section{Materials}
+	\begin{enumerate}[label=(\alph*)]
+		\item Larval zebrafish 3-7 dpf, VSNs labeled with biocytin
+		\item Biocytin, PFA, 1xPBS, Triton-X 100, H\textsubscript{2}O\textsubscript{2}, Acetone, ABC kit, DAB kit
+	\end{enumerate}
+
+
+\section{Methods}
+	\begin{enumerate}[label=(\alph*)]
+		\item Record for VSN (See ZLP001 for details), internal filled with 0.3\% biocytin, recording time of 15-20 mins is sufficient to filled the axon and dendrites.
+
+		\item Fixation of fish: move the fish from recording chamber to the fixative solution (4\% PFA in PBS, 0.1\% Triton-X), let the fish stay for 3hr, RT or overnight at 4 \textsuperscript{o}C. \textbf{(Day 1)}
+			
+		\item Rinse the fish extensivey with PBS(1\% Triton-X) for 3 times, 10 mins in between
+		
+		\item Permeabilization: 2 options (1. Acetone; 2. skin removal)
+				
+				Acetone (\textbf{recommended}):
+				\begin{enumerate}[label=\arabic*.]
+				\item Wash in dH\textsubscript{2}0 for 5 mins, RT
+				\item Wash in acetone for 5 mins, RT
+				\item Wash in cold acetone (-20 \textsuperscript{o}C) for 10 mins
+				\item Wash in PBS(1\% Triton-X), for 3 times
+				\end{enumerate}
+		
+				Skin removal:
+				\begin{enumerate}[label=\arabic*.]
+				\item Pin the fish in the silicone gel plate
+				\item Use a sharp pin to peel the skin out on the brain and spinal cord, then use a forcep to remove the skin off completely
+				\item Remove the other parts of the body like gar, heart and yolk
+				\end{enumerate}
+		\item Queching endogenous peroxidase activity:  incubate fish in 3\% wt/vol H\textsubscript{2}O\textsubscript{2} for 20-30 mins to block endogeous peroxidase activity. Repeat until no further oxygen bubbles are visible. Then wash extensively with PBS (1\% Triton-X) for 3 times.
+
+		\item ABC reaction for biocytin-labeled tissue
+		\begin{enumerate}[label=\arabic*.]
+			\item Refresh prepared ABC solution, two drops of solution A and B in 2.5mL PBS(0.1\% Triton-X). Mix and allow to stand for 5-30 mins before use.
+			\item Incubate fish in ABC solution for 1h, RT in complete darkness.
+			\item Move to the cold room  (4 \textsuperscript{o}C), further incubate fish on the shaker overnight. (\textbf{Day 2})
+		\end{enumerate}
+	\item Next day: Move back to RT, incubate for 1h at RT. Then wash extensively with PBS (1\% Triton-X) for 3 times.
+	\item DAB reaction:
+	\begin{enumerate}[label=\arabic*.]
+		\item Prepare DAB solution. Put the DAB tablets in RT before making the solution. Dissovle the DAB/Cobalt tablet in 2.5 mL of water and the Buffer/Urea Hydrogen Peroxidase in 2.5 mL of water respectively. Incubate each fish in 0.5 mL of DAB/Cobalt solution on a shaker for 30 mins at 4 \textsuperscript{o}C.
+		\item Start the reaction by adding 0.5 mL Buffer/Urea Hydrogen Peroxidase solution, and incubate for 30-60 s until the biocytin staining turns brown. Stop the reaction by moving the fish to PBS buffer (1\% Triton-X), and wash the fish extensively.
+	\end{enumerate}
+	\item Mount fish: use standard microscope slide to mount the fish, remove all PBS and add mounting solution. Try to put fish in the right orientation, and carefully put on cover glass (avoid bubbles). \textbf{(Day 3)}
+	
+	\end{enumerate}
+\end{document}
